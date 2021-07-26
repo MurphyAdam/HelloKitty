@@ -92,7 +92,7 @@ export default function Cats() {
                         >
                             {cats.map(cat => {
                                 return (
-                                    <CatView cat={cat} />
+                                    <CatView key={cat.id} cat={cat} />
                                 )
                             })
 
