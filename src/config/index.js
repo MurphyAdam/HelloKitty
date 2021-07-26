@@ -1,0 +1,1 @@
+export const apiKey = process.env.REACT_APP_KITTY_KEY
