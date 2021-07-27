@@ -32,6 +32,7 @@ export default function Cats() {
                 setCats(response.data)
             })
             .catch(error => {
+                setError('Something went wrong. Please try again later');
                 console.log(error)
             })
             .finally(() => {
