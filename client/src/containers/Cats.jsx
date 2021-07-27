@@ -63,7 +63,7 @@ export default function Cats() {
         // when the user changes a parameter, we call getCats with the new 
         // parameter(s) - only if getCats is not already loading.
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [error, isLoading, limit])
+    }, [error, success, isLoading])
 
     useEffect(() => {
         getCats(limit);
